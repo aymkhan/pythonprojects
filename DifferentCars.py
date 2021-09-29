@@ -17,9 +17,8 @@ jeep2 = Car("Jeep","SomeJeep",1996,"$15,900")
 jeep = (jeep1,jeep2)
 
 print("\nWe have a small inventory of Used and New cars")
-choice = raw_input("\nWhich make are you interested in?\nToyota, Jeep, or Honda? ")
+choice = raw_input("\nWhich make are you interested in:\nToyota, Jeep, or Honda? ")
 choice2 = choice.lower()
-print(choice2)
 print("\nHere are the available cars: ")
 
 if choice2 == "toyota":
@@ -28,19 +27,29 @@ if choice2 == "toyota":
         print("priced at: ")
         Car.getPrice(x)
         print("\n")
+    print("You can view more cars at the dealer's website ")
+    print("https://toyota.com")
 elif choice2 == "honda":
     for x in honda:
         Car.getNameYear(x)
         print("priced at: ")
         Car.getPrice(x)
         print("\n")
+    print("You can view more cars at the dealer's website ")
+    print("https://www.honda.com")
 elif choice2 == "jeep":
     for x in jeep:
         Car.getNameYear(x)
         print("priced at: ")
         Car.getPrice(x)
         print("\n")
+    print("You can view more cars at the dealer's website ")
+    print("https://www.jeep.com")
 else:
-    print("You did not make a valid selection ")
+    print("Woops, nevermind. You did not make a valid selection.\nEnd of program. ")
+    exit()
 
-print("End of program.")
+
+
+
+
