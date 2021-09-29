@@ -5,8 +5,11 @@ class Car:
         self.year = year
         self.price = price
 
-    def getNameYear(self):
+    def getModelYear(self):
         print self.model + " " + str(self.year)
+
+    def getModel(self):
+        return self.model
 
     def getPrice(self):
         print self.price

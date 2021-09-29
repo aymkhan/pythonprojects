@@ -23,15 +23,20 @@ print("\nHere are the available cars: ")
 
 if choice2 == "toyota":
     for x in toyota:
-        Car.getNameYear(x)
+        Car.getModelYear(x)
         print("priced at: ")
         Car.getPrice(x)
         print("\n")
     print("You can view more cars at the dealer's website ")
     print("https://toyota.com")
+    # Provide more information about the user selected car
+    car_choice = raw_input("Which one would you like to see more info about? ")
+    for x in toyota:
+        if car_choice == str(Car.getModel(x[0])):
+            print("Corolla - good choice!")
 elif choice2 == "honda":
     for x in honda:
-        Car.getNameYear(x)
+        Car.getModelYear(x)
         print("priced at: ")
         Car.getPrice(x)
         print("\n")
@@ -39,7 +44,7 @@ elif choice2 == "honda":
     print("https://www.honda.com")
 elif choice2 == "jeep":
     for x in jeep:
-        Car.getNameYear(x)
+        Car.getModelYear(x)
         print("priced at: ")
         Car.getPrice(x)
         print("\n")
