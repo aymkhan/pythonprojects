@@ -1,1 +1,2 @@
+#Ignore all compilation files from PyCharm with file extensions .pyc
 "*.pyc"
